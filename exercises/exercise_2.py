@@ -1,4 +1,4 @@
-name = "help me print\n"
+name = "help me print"
 description = "helps you print 3 numbers between 1 and 10 to the console"
 
 

@@ -58,3 +58,7 @@ British
 2
 8
 
+zeus
+15
+english
+

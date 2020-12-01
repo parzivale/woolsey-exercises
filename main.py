@@ -9,7 +9,7 @@ while(True):
   print("Welcome to Zeus's coding exercises which would you like to view(type the exercise number)")
   for item in exercises.modules:
     if not item.endswith("__init__.py"):
-      print(item[41:-3])
+        print(item[43:-3] + " " + getattr(sys.modules["exercises.exercise_" + item[-4:-3]], "name"))
 
   selection = input()
 
@@ -30,7 +30,7 @@ while(True):
   if (choice == "y" or choice == "Y"):
     getattr(sys.modules["exercises.exercise_" + selection], "run_exercise")()
 
-  print("\nWould you like to exit y/n")
+  print("\nWould you like to exit Y/N")
 
   exit = input()
 
