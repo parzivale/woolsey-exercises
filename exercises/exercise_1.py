@@ -1,4 +1,4 @@
-name = "A new student"
+name = "a new student"
 description = "A program that takes in a students name, age and nationality and outputs it to a text file and the console"
 
 class student:
