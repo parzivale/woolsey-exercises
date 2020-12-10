@@ -1,11 +1,11 @@
 import re
 
-name = "celcius to fahrenheit"
-description = "converts celcius to farenheight or vice versa"
+name = "Celsius to fahrenheit"
+description = "Converts celsius to farenheight or vice versa"
 
 def run_exercise():
   while(True):
-    print("convert from celcius(c) or fahrenheit(f), type c or f below")
+    print("convert from celsius(c) or fahrenheit(f), type c or f below")
 
     choice = input()
 

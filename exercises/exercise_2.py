@@ -1,5 +1,5 @@
-name = "help me print"
-description = "helps you print 3 numbers between 1 and 10 to the console"
+name = "Help me print"
+description = "Helps you print 3 numbers between 1 and 10 to the console"
 
 
 def run_exercise():

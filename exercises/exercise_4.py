@@ -1,7 +1,6 @@
 import re
-import math
 
-name = "cash register simulated"
+name = "Cash register simulated"
 description = "A virual cash register"
 
 
@@ -24,7 +23,7 @@ def run_exercise():
       cash_given = input("thats not enough for this item please insert more money\n")
 
     if float(cash_given) >= float(price):
-      print("transaction compleated thank you for shopping with us\n")
+      print("transaction completed thank you for shopping with us\n")
       if (float(cash_given) > float(price)):
         print("here is your change " + str(round(float(cash_given) - float(price),2)))
     
