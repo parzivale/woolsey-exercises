@@ -26,15 +26,4 @@ def run_exercise():
       print("transaction completed thank you for shopping with us\n")
       if (float(cash_given) > float(price)):
         print("here is your change " + str(round(float(cash_given) - float(price),2)))
-    
-    print("would you like to run this again?Y/N")
 
-    valid_inputs = ("y","n")
-
-    choice = input()
-
-    while choice.lower() not in valid_inputs:
-      choice = input()
-    
-    if (choice.lower() == "n"):
-      break

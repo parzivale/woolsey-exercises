@@ -24,10 +24,5 @@ def run_exercise():
     
     if choice.lower() == "f":
       print((float(temp)-32)*5/9)
-    
-    while choice not in valid_options[1]:
-        choice = input("would you like to convert another temperature\n")
-    if choice.lower() == "n":
-      break
-    
+
 

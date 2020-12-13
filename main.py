@@ -21,7 +21,7 @@ while(True):
   while (selection not in [str(a) for a in range(1,len(exercises.modules))]):
     selection = input("please select a number between 1 and" + " "+ str(len(exercises.modules)-1) + "\n")
 
-  print(getattr(sys.modules["exercises.exercise_" + selection], "name") + ":" + "\n",getattr(sys.modules["exercises.exercise_" + selection], "description"))
+  print("\n" + getattr(sys.modules["exercises.exercise_" + selection], "name") + ":" + "\n",getattr(sys.modules["exercises.exercise_" + selection], "description"))
     
   print("\nWould you like to execute " + getattr(sys.modules["exercises.exercise_" + selection], "name") + "?" + "\nY/N")
 
@@ -33,7 +33,20 @@ while(True):
     choice = input()
 
   if (choice == "y" or choice == "Y"):
-    getattr(sys.modules["exercises.exercise_" + selection], "run_exercise")()
+    while(True):
+      print("\n") 
+      getattr(sys.modules["exercises.exercise_" + selection], "run_exercise")()
+      print("\nWould you like to run this again?Y/N")
+
+      valid_inputs = ("y","n")
+
+      choice = input()
+
+      while choice.lower() not in valid_inputs:
+        choice = input()
+    
+      if (choice.lower() == "n"):
+        break
 
   print("\nWould you like to exit Y/N")
 
