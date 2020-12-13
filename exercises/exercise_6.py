@@ -7,7 +7,7 @@ def run_exercise():
 
   grade = input("What grade did you get\n")
     
-  while not re.match("^[0-9]{1,3}$|^[0-9]{1,2}\.+[0-9]+$",grade):
+  while not re.match("^(100)$|^[0-9]{1,2}$|^[0-9]{1,2}\.+[0-9]+$",grade):
     grade = input("That doesn't seem like a vaild grade please try again\n")
 
   grade = float(grade)
