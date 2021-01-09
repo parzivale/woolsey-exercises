@@ -7,7 +7,7 @@ import sys
 
 while(True):
   names = []
-  print("Welcome to Zeus's coding exercises which would you like to view(type the exercise number)")
+  print("Welcome to Zeus's coding exercises!\nWhich exercise would you like to view?(type the exercise number)\n")
   for item in exercises.modules:
     if not item.endswith("__init__.py"):
         names.append(item[43:-3] + " " + getattr(sys.modules["exercises.exercise_" + item[-4:-3]], "name"))

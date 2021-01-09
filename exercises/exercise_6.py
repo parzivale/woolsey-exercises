@@ -1,7 +1,7 @@
 import re
 
 name = "Grade me"
-description = "input a decimal score and it outputs a grade"
+description = "Input a decimal score and it outputs a grade"
 
 def run_exercise():
 
